@@ -56,6 +56,9 @@ Player.prototype.update = function(e) {
         this.y += gridSize;
     };
     this.checkCollision();
+    if(this.y < gridSize) {
+        console.log("you win!");
+    }
 }
 
 Player.prototype.checkCollision = function () {
